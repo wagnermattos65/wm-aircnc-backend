@@ -1,0 +1,10 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Wagner Mattos <github@wagnermattos.com> (https://wagnermattos.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
