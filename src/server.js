@@ -1,12 +1,12 @@
 require('dotenv').config();
 
 const express = require('express')
+const routes = require('./routes')
 
 const app = express();
 
-app.get('/status',(req, res) => {
-  res.json({ status: "Server is running", port: `${process.env.PORT}`, time:`${Date()}` })
-})
+app.use(express.json())
+app.use(routes)
 
 app.listen(process.env.PORT)
 
