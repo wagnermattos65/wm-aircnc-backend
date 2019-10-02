@@ -5,7 +5,8 @@
   "author": "Wagner Mattos <github@wagnermattos.com> (https://wagnermattos.com/)",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "devDependencies": {
     "nodemon": "^1.19.3"
