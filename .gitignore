@@ -98,4 +98,5 @@ public
 .dynamodb/
 
 # uploads
-uploads
+uploads/*
+!uploads/.gitkeep
