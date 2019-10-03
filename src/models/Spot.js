@@ -1,3 +1,4 @@
+require('dotenv').config();
 const mongoose = require('mongoose')
 
 const SpotSchema = new mongoose.Schema({
@@ -16,7 +17,7 @@ const SpotSchema = new mongoose.Schema({
 })
 
 SpotSchema.virtual('thumbnail_url').get(function() {
-  return `http://localhost:8265/files/${this.thumbnail}`
+  return `${process.env.API_URL}/files/${this.thumbnail}`
 })
 
 module.exports = mongoose.model('Spot',SpotSchema)
